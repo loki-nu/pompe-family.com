@@ -1,0 +1,392 @@
+/*初期化*/
+html {
+  color: #000;
+  background: #FFF
+}
+
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset,
+legend, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+fieldset, img {
+  border: 0
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal
+}
+
+ol, ul {
+  list-style: none
+}
+
+caption, th {
+  text-align: left
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal
+}
+
+q:before, q:after {
+  content: ''
+}
+
+abbr, acronym {
+  border: 0;
+  font-variant: normal
+}
+
+sup {
+  vertical-align: text-top
+}
+
+sub {
+  vertical-align: text-bottom
+}
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit
+}
+
+input, textarea, select {
+  *font-size: 100%
+}
+
+legend {
+  color: #000
+}
+
+/*style*/
+html {
+  font-family: Verdana, Arial;
+
+}
+
+h1, h2 {
+  margin-top: 24px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+#container {
+  margin: 0px;
+  background-image: url("images/background.jpg");
+  background-repeat: repeat-y;
+  background-size:100% auto;
+}
+
+#header {
+  background-image: url("images/header.jpg");
+  background-position: left top;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 280px;
+  width: 100%;
+}
+
+#menu {
+  *zoom: 1;
+  list-style-type: none;
+  width: 960px;
+  margin: 0px auto 0px;
+  padding: 0;
+}
+
+#menu:before, #menu:after {
+  content: "";
+  display: table;
+}
+
+#menu:after {
+  clear: both;
+}
+
+#menu li {
+  position: relative;
+  width: 160px;
+  float: left;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#menu li a {
+  display: block;
+  margin: 0;
+  padding: 15px 0 11px;
+  background: #6d9a4a;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+#menu li ul {
+  list-style: none;
+  position: absolute;
+  z-index: 9999;
+  top: 100%
+  left: 0;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+#menu li ul li {
+  width: 160px;
+}
+
+#menu li ul li a {
+  padding: 13px 15px;
+  border-top: 1px solid #7c8c0e;
+  background: #6d9a4a;
+  text-align: center;
+}
+
+#menu li:hover > a {
+  background: #6d9a4a;
+}
+
+#menu li a:hover {
+  background: #336045;
+}
+
+#menu li:hover ul {
+  display: block;
+}
+
+#main {
+  width: 960px;
+  margin: 0 auto;
+  height: 100%;
+  min-height: 100%;
+  background: rgba(255,255,255,0.7);
+  overflow: hidden;
+}
+
+/*content*/
+#content {
+  margin: 8px;
+  padding: 10px;
+  width: 640px;
+  float: left;
+  border: ridge 2px;
+  background: rgb(255,255,255);
+}
+
+
+
+#content:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.history {
+  font-size: 16px;
+  width: 640px;
+}
+
+#organization {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#topgo a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  float: right;
+  margin-top: 40px;
+}
+
+#leaflet {
+  height: 480px;
+  width: 100%;
+}
+
+.left {
+  width: 50%;
+  float: left;
+}
+.right {
+  width: 50%;
+  float: right;
+}
+
+#movie {
+  margin-top: 24px;
+  clear: left;
+}
+
+.table1 tr td:first-child {
+width: 220px;
+       vertical-align: top;
+}
+
+.table1 tr td {
+  vertical-align: top;
+padding: 5px 0;
+}
+
+.text {
+  font-size: 16px;
+}
+
+.text_right {
+  text-align: right;
+}
+
+.bold {
+  font-weight: bold;
+}
+.table2 tr td a{
+color: #000;
+text-decoration: none;
+font-size: 18px;
+}
+.table2 tr td {
+padding: 5px;
+}
+
+#sns_link {
+  margin-top: 40px;
+  border-top: #ccc 2px solid;
+}
+
+.link {
+  margin-top: 40px;
+  border-top: #ccc 2px solid;
+}
+
+.link ul li {
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.link table a {
+  text-decoration: none;
+  color: black;
+}
+
+.link table tr td {
+  padding: 5px 0;
+}
+
+.link table tr td:first-child {
+  width: 520px;
+}
+
+#pharmcorp_link {
+  margin-top: 40px;
+  border-top: #ccc 2px solid;
+}
+
+#pharmcorp_link ul li {
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+#sidebar {
+  width: 280px;
+  margin: 0px;
+  padding: 0px;
+  float: right;
+}
+
+#sidemenu {
+  width: 240px;
+  padding: 8px;
+  margin: 10px;
+  border: ridge 2px;
+  background: #fff;
+}
+
+#sidemenu ul {
+  border: #999 solid 1px;
+}
+
+#sidemenu ul li {
+  display: block;
+  background: #eee;
+}
+
+#sidemenu ul li a {
+display: block; 
+text-decoration: none;
+text-align: left;
+color: #000;
+font-size: 20px;
+padding-left: 10px;
+}
+
+#sidemenu ul li:hover {
+  background: #9eb7dd;
+}
+
+#sns {
+  width: 240px;
+  padding: 8px;
+  margin: 10px;
+  border: ridge 2px;
+  background: #fff;
+}
+
+
+
+/*footer*/
+#footer {
+  margin: 0 auto;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+#sitemap {
+  margin: 0 auto;
+  color: #fff;
+  width: 940px;
+  padding: 10px;
+  height: 160px;
+}
+
+#sitemap ul {
+  padding: 10px 20px;
+  float: left;
+}
+
+#sitemap ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#sitemap ul li {
+  padding-top: 10px;
+}
+
+#credit {
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  border-top: 1px solid #bbb;
+  padding: 10px 0 20px;
+}

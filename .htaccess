@@ -1,0 +1,12 @@
+ErrorDocument 404 /error.php
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} !^pompe-family.com [NC]
+RewriteCond %{HTTP_HOST} !^$
+RewriteCond %{HTTPS}:s (on:(s)|off:s)
+RewriteRule ^/?(.*) http%2://pompe\-family\.com/$1 [L,R=301,NE]
+
+RewriteBase /
+RewriteRule ^$ index.php [R=301,L]
+
+DirectoryIndex index.php
